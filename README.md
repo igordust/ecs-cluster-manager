@@ -166,7 +166,7 @@ The ECS Cluster nodes need to have an instance profile attached that allows them
 These are all AWS managed policies so we only need to add the role.
 Create new `EcsInstanceRole` IAM role, select `AWS Service` -> `EC2` as Trusted Entity. Attach following permissions policies:
 
-  - AmazonEC2RoleforSSM
+  - AmazonSSMManagedInstanceCore
   - AmazonEC2ContainerServiceforEC2Role
   - AWSLambdaBasicExecutionRole
 
